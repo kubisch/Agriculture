@@ -25,7 +25,7 @@
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+import Logo from '~/components/LogoDraw.vue'
 
 export default {
   components: {
@@ -35,6 +35,18 @@ export default {
 </script>
 
 <style>
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .container {
   margin: 0 auto;
   min-height: 100vh;
@@ -52,6 +64,7 @@ export default {
   font-size: 100px;
   color: #35495e;
   letter-spacing: 1px;
+  animation: 6.5s fadein;
 }
 
 .subtitle {
@@ -60,6 +73,7 @@ export default {
   color: #526488;
   word-spacing: 5px;
   padding-bottom: 15px;
+  animation: 7s fadein;
 }
 
 .links {

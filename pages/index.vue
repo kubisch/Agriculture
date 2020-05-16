@@ -6,30 +6,22 @@
         agriculture
       </h1>
       <h2 class="subtitle">
-        You're a boomer
+        Hope for a better world
       </h2>
-      <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green">
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
+      <hr />
+      <down-arrow />
     </div>
   </div>
 </template>
 
 <script>
-import Logo from '~/components/LogoDraw.vue'
+import Logo from '~/components/Logo.vue'
+import DownArrow from '~/components/DownArrow.vue'
 
 export default {
   components: {
-    Logo
+    Logo,
+    DownArrow
   }
 }
 </script>
@@ -76,7 +68,8 @@ export default {
   animation: 7s fadein;
 }
 
-.links {
-  padding-top: 15px;
+hr {
+  animation: 7.5s fadein;
+  margin-bottom: 25px;
 }
 </style>

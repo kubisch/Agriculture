@@ -1,15 +1,22 @@
 <template>
-  <div class="container">
-    <div>
-      <logo />
+  <div id="fullpage">
+    <div class="container section">
+      <div style="margin-top: 0 auto">
+        <logo />
+        <h1 class="title">
+          Agriculture
+        </h1>
+        <h2 class="subtitle">
+          Build a better world
+        </h2>
+        <hr />
+        <down-arrow />
+      </div>
+    </div>
+    <div class="container section">
       <h1 class="title">
-        agriculture
+        Testing
       </h1>
-      <h2 class="subtitle">
-        Hope for a better world
-      </h2>
-      <hr />
-      <down-arrow />
     </div>
   </div>
 </template>
@@ -22,7 +29,24 @@ export default {
   components: {
     Logo,
     DownArrow
-  }
+  },
+  mounted() {
+    window.$(document).ready(function() {
+      window.$('#fullpage').fullpage()
+    })
+  },
+  head: {
+    script: [
+      {
+        src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'
+      },
+      {
+        src:
+          'https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.js'
+      }
+    ]
+  },
+  css: ['fullpage.js/dist/jquery.fullpage.min.css']
 }
 </script>
 
@@ -71,5 +95,11 @@ export default {
 hr {
   animation: 7.5s fadein;
   margin-bottom: 25px;
+}
+
+.fp-section,
+.fp-slide,
+.fp-tableCell {
+  height: auto !important;
 }
 </style>

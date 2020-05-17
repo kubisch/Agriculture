@@ -52,7 +52,9 @@ export default {
       }
     ]
   },
-  css: ['fullpage.js/dist/jquery.fullpage.min.css']
+  css: [
+    'https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.css'
+  ]
 }
 </script>
 

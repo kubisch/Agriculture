@@ -51,10 +51,7 @@ export default {
           'https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.js'
       }
     ]
-  },
-  css: [
-    'https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.css'
-  ]
+  }
 }
 </script>
 

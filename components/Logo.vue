@@ -50,8 +50,8 @@ export default {
     tl.add({
       targets: '#LogoPath3',
       strokeDashoffset: [anime.setDashoffset, 0],
-      easing: 'easeInOutQuad',
-      duration: 3000,
+      easing: 'easeInOutSine',
+      duration: 2500,
       delay: 500
     })
       .add(
@@ -61,7 +61,7 @@ export default {
           easing: 'easeInOutSine',
           duration: 1000
         },
-        '-=1250'
+        '-=1350'
       )
       .add(
         {
@@ -90,7 +90,7 @@ export default {
           easing: 'easeInOutQuad',
           duration: 1000
         },
-        '-=600'
+        '-=950'
       )
       .add(
         {
@@ -99,7 +99,7 @@ export default {
           easing: 'easeInOutQuad',
           duration: 1000
         },
-        '-=400'
+        '-=550'
       )
   }
 }

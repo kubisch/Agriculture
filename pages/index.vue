@@ -3,13 +3,13 @@
     <div class="container section">
       <div style="margin-top: 0 auto">
         <logo />
-        <h1 class="title">
+        <h1 class="title" style="animation: 6s fadein;">
           Agriculture
         </h1>
-        <h2 class="subtitle">
+        <h2 class="subtitle" style="animation: 6.5s fadein;">
           Build a better world
         </h2>
-        <hr />
+        <hr style="animation: 7s fadein;" />
         <down-arrow />
       </div>
     </div>
@@ -17,6 +17,9 @@
       <h1 class="title">
         Testing
       </h1>
+      <h2 class="subtitle">
+        Testing 2.0
+      </h2>
     </div>
   </div>
 </template>
@@ -31,11 +34,14 @@ export default {
     DownArrow
   },
   mounted() {
-    window.$(document).ready(function() {
-      window.$('#fullpage').fullpage()
-    })
+    if (process.browser && window.$ !== undefined) {
+      window.$(document).ready(function() {
+        window.$('#fullpage').fullpage({ anchors: ['firstPage', 'secondPage'] })
+      })
+    }
   },
   head: {
+    title: 'Agriculture',
     script: [
       {
         src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'
@@ -80,7 +86,6 @@ export default {
   font-size: 100px;
   color: #35495e;
   letter-spacing: 1px;
-  animation: 6.5s fadein;
 }
 
 .subtitle {
@@ -89,11 +94,9 @@ export default {
   color: #526488;
   word-spacing: 5px;
   padding-bottom: 15px;
-  animation: 7s fadein;
 }
 
 hr {
-  animation: 7.5s fadein;
   margin-bottom: 25px;
 }
 

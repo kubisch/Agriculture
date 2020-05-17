@@ -5,7 +5,9 @@
         404: Page not found
       </h1>
       <h2 class="subtitle">
-        <nuxt-link to="/" style="text-decoration: none">Go back?</nuxt-link>
+        <nuxt-link to="/" style="text-decoration: none; color: #35495e">
+          Go back?
+        </nuxt-link>
       </h2>
     </div>
   </div>

@@ -7,6 +7,11 @@ const routerBase =
       }
     : {}
 
+const faviconLocation =
+  process.env.DEPLOY_ENV === 'GH_PAGES'
+    ? '/Agriculture/favicon.ico'
+    : '/favicon.ico'
+
 module.exports = {
   mode: 'universal',
   /*
@@ -23,7 +28,7 @@ module.exports = {
         content: 'Building a better world'
       }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [{ rel: 'icon', type: 'image/x-icon', href: faviconLocation }]
   },
   /*
    ** Customize the progress-bar color

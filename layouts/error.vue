@@ -1,11 +1,14 @@
 <template>
   <div class="container">
     <div style="margin-top: 0 auto">
-      <h1 class="title">
+      <h1 class="title" style="animation: fadein 1.5s;">
         404: Page not found
       </h1>
       <h2 class="subtitle">
-        <nuxt-link to="/" style="text-decoration: none; color: #35495e">
+        <nuxt-link
+          to="/"
+          style="animation: fadein 2s; text-decoration: none; color: #35495e"
+        >
           Go back?
         </nuxt-link>
       </h2>
@@ -15,10 +18,10 @@
 
 <style>
 @keyframes fadein {
-  0% {
+  from {
     opacity: 0;
   }
-  100% {
+  to {
     opacity: 1;
   }
 }
@@ -40,7 +43,6 @@
   font-size: 100px;
   color: #35495e;
   letter-spacing: 1px;
-  animation: fadein 1.5s;
   margin-bottom: 2rem;
 }
 
@@ -50,7 +52,6 @@
   color: #526488;
   word-spacing: 5px;
   padding-bottom: 15px;
-  animation: fadein 2s;
 }
 </style>
 

@@ -56,8 +56,6 @@
 
 <script>
 export default {
-  // eslint-disable-next-line vue/require-prop-types
-  props: ['error'],
   head: {
     title: 'Agriculture',
     script: [
@@ -66,10 +64,9 @@ export default {
       },
       {
         src:
-          'https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.js'
+          'https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js'
       }
     ]
-  },
-  css: ['fullpage.js/dist/jquery.fullpage.min.css']
+  }
 }
 </script>

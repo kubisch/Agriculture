@@ -14,6 +14,9 @@ const faviconLocation =
 
 module.exports = {
   mode: 'universal',
+  generate: {
+    subFolders: false
+  },
   /*
    ** Headers of the page
    */

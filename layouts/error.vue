@@ -1,13 +1,13 @@
 <template>
-  <div class="container">
+  <div class="e_container">
     <div style="margin-top: 0 auto">
-      <h1 class="title" style="animation: fadein 1.5s;">
+      <h1 class="e_title" style="animation: e_fadein 1s;">
         404: Page not found
       </h1>
-      <h2 class="subtitle">
+      <h2 class="e_subtitle">
         <nuxt-link
           to="/"
-          style="animation: fadein 2s; text-decoration: none; color: #35495e"
+          style="animation: e_fadein 1.5s; text-decoration: none; color: #35495e"
         >
           Go back?
         </nuxt-link>
@@ -17,16 +17,19 @@
 </template>
 
 <style>
-@keyframes fadein {
-  from {
+@keyframes e_fadein {
+  0% {
     opacity: 0;
   }
-  to {
+  75% {
+    opacity: 0;
+  }
+  100% {
     opacity: 1;
   }
 }
 
-.container {
+.e_container {
   margin: 0 auto;
   min-height: 100vh;
   display: flex;
@@ -35,7 +38,7 @@
   text-align: center;
 }
 
-.title {
+.e_title {
   font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   display: block;
@@ -46,7 +49,7 @@
   margin-bottom: 2rem;
 }
 
-.subtitle {
+.e_subtitle {
   font-weight: 300;
   font-size: 42px;
   color: #526488;

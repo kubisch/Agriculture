@@ -1,41 +1,32 @@
 <template>
-  <div>
-    <navbar style="animation: 7s navbarFadein;" />
+  <div style="position: relative; min-height: 100vh;">
+    <navbar />
     <div style="margin-top: -5.5rem">
       <div class="container section">
         <div style="margin-top: 0 auto">
-          <logo />
-          <h1 class="title" style="animation: 6s fadein;">
+          <LogoNoAnim />
+          <h1 class="title">
             Agriculture
           </h1>
-          <h2 class="subtitle" style="animation: 6.5s fadein;">
+          <h2 class="subtitle">
             Build a better world
           </h2>
-          <hr style="animation: 7s fadein;" />
-          <!-- <down-arrow /> -->
+          <hr />
         </div>
       </div>
-      <!-- <div class="container section">
-        <h1 class="title">
-          Testing
-        </h1>
-        <h2 class="subtitle">
-          Testing 2.0
-        </h2>
-      </div> -->
     </div>
   </div>
 </template>
 
 <script>
 import Navbar from '~/components/Navbar.vue'
-import Logo from '~/components/Logo.vue'
+import LogoNoAnim from '~/components/LogoNoAnim.vue'
 // import DownArrow from '~/components/DownArrow.vue'
 
 export default {
   components: {
     Navbar,
-    Logo //,
+    LogoNoAnim //,
     // DownArrow
   },
   mounted() {
@@ -60,34 +51,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
-@keyframes fadein {
-  0% {
-    opacity: 0;
-  }
-  75% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes navbarFadein {
-  0% {
-    opacity: 0;
-    transform: translateY(-2rem);
-  }
-  50% {
-    opacity: 0;
-    transform: translateY(-2rem);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
+<style scoped lang="scss">
 .container {
   margin: 0 auto;
   min-height: 100vh;
@@ -129,6 +93,7 @@ hr {
 $t-duration: 600ms;
 $t-delay: 150ms;
 
+.page-enter-active,
 .page-leave-active {
   transition-duration: $t-duration * 2;
 
@@ -179,6 +144,32 @@ $t-delay: 150ms;
   &::after {
     transform: scale(1);
     transform-origin: left;
+  }
+}
+
+.page-enter {
+  &::before,
+  &::after {
+    transform: scaleX(1);
+  }
+}
+
+.page-enter-active {
+  &::before {
+    transition-duration: $t-duration;
+  }
+
+  &::after {
+    transition-duration: $t-duration - $t-delay;
+    transition-delay: $t-delay;
+  }
+}
+
+.page-enter-to {
+  &::before,
+  &::after {
+    transform: scaleX(0);
+    transform-origin: right;
   }
 }
 </style>

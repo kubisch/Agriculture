@@ -84,10 +84,30 @@ hr {
   margin-bottom: 25px;
 }
 
-.fp-section,
-.fp-slide,
-.fp-tableCell {
-  height: auto !important;
+@media (max-width: 482px) {
+  .title {
+    font-family: 'Quicksand', 'Source Sans Pro', -apple-system,
+      BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+      sans-serif;
+    display: block;
+    font-weight: 300;
+    font-size: 60px;
+    color: #35495e;
+    letter-spacing: 1px;
+    margin-bottom: 0.6rem;
+  }
+
+  .subtitle {
+    font-weight: 300;
+    font-size: 25.2px;
+    color: #526488;
+    word-spacing: 3px;
+    padding-bottom: 10px;
+  }
+
+  hr {
+    margin-bottom: 25px;
+  }
 }
 
 $t-duration: 600ms;

@@ -1,17 +1,27 @@
 <template>
-  <div>
-    <navbar style="animation: 7s navbarFadein;" />
+  <div style="position: relative; min-height: 100vh;">
+    <navbar
+      style="opacity: 0; animation-name: navbarFadein; animation-duration: 4s; animation-delay: 3.5s; animation-fill-mode: forwards;"
+    />
     <div style="margin-top: -5.5rem">
       <div class="container section">
         <div style="margin-top: 0 auto">
           <logo />
-          <h1 class="title" style="animation: 6s fadein;">
+          <h1
+            class="title"
+            style="opacity: 0; animation-name: fadein; animation-duration: 1.5s; animation-delay: 4.5s; animation-fill-mode: forwards;"
+          >
             Agriculture
           </h1>
-          <h2 class="subtitle" style="animation: 6.5s fadein;">
+          <h2
+            class="subtitle"
+            style="opacity: 0; animation-name: fadein; animation-duration: 1.625s; animation-delay: 4.875s; animation-fill-mode: forwards;"
+          >
             Build a better world
           </h2>
-          <hr style="animation: 7s fadein;" />
+          <hr
+            style="opacity: 0; animation-name: fadein; animation-duration: 1.75s; animation-delay: 5.25s; animation-fill-mode: forwards;"
+          />
           <!-- <down-arrow /> -->
         </div>
       </div>
@@ -65,9 +75,6 @@ export default {
   0% {
     opacity: 0;
   }
-  75% {
-    opacity: 0;
-  }
   100% {
     opacity: 1;
   }
@@ -75,10 +82,6 @@ export default {
 
 @keyframes navbarFadein {
   0% {
-    opacity: 0;
-    transform: translateY(-2rem);
-  }
-  50% {
     opacity: 0;
     transform: translateY(-2rem);
   }
@@ -120,10 +123,30 @@ hr {
   margin-bottom: 25px;
 }
 
-.fp-section,
-.fp-slide,
-.fp-tableCell {
-  height: auto !important;
+@media (max-width: 482px) {
+  .title {
+    font-family: 'Quicksand', 'Source Sans Pro', -apple-system,
+      BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+      sans-serif;
+    display: block;
+    font-weight: 300;
+    font-size: 60px;
+    color: #35495e;
+    letter-spacing: 1px;
+    margin-bottom: 0.6rem;
+  }
+
+  .subtitle {
+    font-weight: 300;
+    font-size: 25.2px;
+    color: #526488;
+    word-spacing: 3px;
+    padding-bottom: 10px;
+  }
+
+  hr {
+    margin-bottom: 25px;
+  }
 }
 
 $t-duration: 600ms;

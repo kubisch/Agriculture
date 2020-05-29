@@ -1,27 +1,19 @@
 <template>
   <div style="position: relative; min-height: 100vh;">
-    <navbar
-      style="opacity: 0; animation-name: navbarFadein; animation-duration: 4s; animation-delay: 3.5s; animation-fill-mode: forwards;"
-    />
+    <div class="navAnim">
+      <navbar />
+    </div>
     <div style="margin-top: -5.5rem">
       <div class="container section">
         <div style="margin-top: 0 auto">
           <logo />
-          <h1
-            class="title"
-            style="opacity: 0; animation-name: fadein; animation-duration: 1.5s; animation-delay: 4.5s; animation-fill-mode: forwards;"
-          >
+          <h1 class="title">
             Agriculture
           </h1>
-          <h2
-            class="subtitle"
-            style="opacity: 0; animation-name: fadein; animation-duration: 1.625s; animation-delay: 4.875s; animation-fill-mode: forwards;"
-          >
+          <h2 class="subtitle">
             Build a better world
           </h2>
-          <hr
-            style="opacity: 0; animation-name: fadein; animation-duration: 1.75s; animation-delay: 5.25s; animation-fill-mode: forwards;"
-          />
+          <hr />
           <!-- <down-arrow /> -->
         </div>
       </div>
@@ -70,7 +62,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
 @keyframes fadein {
   0% {
     opacity: 0;
@@ -91,6 +83,14 @@ export default {
   }
 }
 
+.navAnim {
+  opacity: 0;
+  animation-name: navbarFadein;
+  animation-duration: 4s;
+  animation-delay: 3.5s;
+  animation-fill-mode: forwards;
+}
+
 .container {
   margin: 0 auto;
   min-height: 100vh;
@@ -109,6 +109,11 @@ export default {
   color: #35495e;
   letter-spacing: 1px;
   margin-bottom: 1rem;
+  opacity: 0;
+  animation-name: fadein;
+  animation-duration: 1.5s;
+  animation-delay: 4.5s;
+  animation-fill-mode: forwards;
 }
 
 .subtitle {
@@ -117,10 +122,20 @@ export default {
   color: #526488;
   word-spacing: 5px;
   padding-bottom: 15px;
+  opacity: 0;
+  animation-name: fadein;
+  animation-duration: 1.625s;
+  animation-delay: 4.875s;
+  animation-fill-mode: forwards;
 }
 
 hr {
   margin-bottom: 25px;
+  opacity: 0;
+  animation-name: fadein;
+  animation-duration: 1.75s;
+  animation-delay: 5.25s;
+  animation-fill-mode: forwards;
 }
 
 @media (max-width: 482px) {
@@ -161,14 +176,19 @@ $t-delay: 150ms;
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 2;
+    z-index: 0;
     display: block;
     width: 100%;
     height: 50%;
     transition-property: opacity, transform;
     transition-timing-function: ease-in-out;
   }
-
+  @media (max-width: 991px) {
+    &::before,
+    &::after {
+      z-index: 2;
+    }
+  }
   &::before {
     background-color: #2e2e2e;
   }

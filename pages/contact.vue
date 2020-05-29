@@ -3,7 +3,7 @@
     <navbar />
     <div class="container main-content">
       <div class="row justify-content-between" style="margin-top: 4rem">
-        <div class="col-sm-7" style="margin-bottom: 6rem;">
+        <div class="col-sm-7" style="margin-bottom: 2rem;">
           <div class="card shadow-sm">
             <div class="card-body">
               <h5 class="card-title title">Contact us</h5>
@@ -57,11 +57,10 @@
               <h5 class="card-title title" style="font-size: 2rem;">
                 Find us on social media
               </h5>
-              <hr />
               <p class="card-text">
-                With supporting text below as a natural lead-in to additional
-                content.
+                Follow us for exclusive updates!
               </p>
+              <hr />
               <div>
                 <a href=""><i class="fab fa-steam-square fa-5x"></i></a>
                 <a href=""><i class="fab fa-facebook-square fa-5x"></i></a>
@@ -80,7 +79,7 @@
       </div>
     </div>
     <footer class="footer">
-      <div style="margin-left: 2rem;">
+      <div class="footerWrapper">
         <span class="text-white-50"
           >&copy; Niseyami 2020 / Github:
           <a href="https://github.com/Niseyami" class="text-white-50"
@@ -133,14 +132,24 @@ a:hover {
   background-color: #2e3338;
 }
 
-@media (max-width: 445px) {
+.footerWrapper {
+  margin-left: 2rem;
+}
+
+@media (max-width: 416px) {
   .footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 5rem;
-    line-height: 2.5rem;
+    height: 3.5rem;
+    line-height: 1rem;
     background-color: #2e3338;
+    div {
+      margin-top: 0.75rem;
+    }
+  }
+}
+
+@media (max-width: 445px) {
+  .footerWrapper {
+    margin-left: 1rem;
   }
 }
 

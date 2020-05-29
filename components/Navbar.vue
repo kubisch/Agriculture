@@ -59,7 +59,13 @@
 <style>
 nav {
   position: absolute;
-  z-index: 99;
+  /* z-index: 99; */
+}
+
+@media (min-width: 992px) {
+  nav {
+    z-index: 99;
+  }
 }
 
 .navbar {

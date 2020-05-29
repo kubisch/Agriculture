@@ -80,13 +80,12 @@
       </div>
     </div>
     <footer class="footer">
-      <div class="container-fluid">
-        <span class="text-white-50" style="margin-left: 2rem;"
+      <div style="margin-left: 2rem;">
+        <span class="text-white-50"
           >&copy; Niseyami 2020 / Github:
           <a href="https://github.com/Niseyami" class="text-white-50"
             >https://github.com/Niseyami</a
           ></span
-        >
         >
       </div>
     </footer>
@@ -94,9 +93,6 @@
 </template>
 
 <style scoped lang="scss">
-.container {
-  align-items: normal;
-}
 .title {
   font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -135,6 +131,17 @@ a:hover {
   height: 2.5rem;
   line-height: 2.5rem;
   background-color: #2e3338;
+}
+
+@media (max-width: 445px) {
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 5rem;
+    line-height: 2.5rem;
+    background-color: #2e3338;
+  }
 }
 
 $t-duration: 600ms;

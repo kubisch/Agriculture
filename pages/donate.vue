@@ -6,7 +6,7 @@
         <div class="row no-gutters">
           <div class="col-md-4">
             <img
-              src="/donate-image.jpg"
+              src="/Agriculture/donate-image.jpg"
               class="card-img"
               alt="Donation image"
             />

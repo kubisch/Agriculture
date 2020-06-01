@@ -64,7 +64,9 @@
               <div>
                 <a href=""><i class="fab fa-steam-square fa-5x"></i></a>
                 <a href=""><i class="fab fa-facebook-square fa-5x"></i></a>
-                <a href=""><i class="fab fa-github-square fa-5x"></i></a>
+                <a href="https://github.com/Niseyami"
+                  ><i class="fab fa-github-square fa-5x"></i
+                ></a>
                 <a href=""><i class="fab fa-snapchat-square fa-5x"></i></a>
                 <a href=""><i class="fab fa-twitter-square fa-5x"></i></a>
                 <a href=""><i class="fab fa-tumblr-square fa-5x"></i></a>

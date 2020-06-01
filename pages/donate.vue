@@ -1,12 +1,17 @@
 <template>
   <div style="position: relative; min-height: 100vh;">
     <navbar />
-    <div class="container main-content" style="margin-top: 4rem">
-      <div class="card mb-3">
+    <div
+      class="container main-content"
+      style="margin-top: 4rem; padding-bottom: 4rem;"
+    >
+      <div class="card shadow-sm mb-3">
         <div class="row no-gutters">
           <div class="col-md-4">
+            <!-- Github pages: src="/Agriculture/donate-image.jpg" -->
+            <!-- Not Github pages: src="/donate-image.jpg" -->
             <img
-              src="/Agriculture/donate-image.jpg"
+              src="/donate-image.jpg"
               class="card-img"
               alt="Donation image"
             />
@@ -214,6 +219,32 @@ a:hover {
 
 .footerWrapper {
   margin-left: 2rem;
+}
+
+@media (max-width: 482px) {
+  .title {
+    font-family: 'Quicksand', 'Source Sans Pro', -apple-system,
+      BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+      sans-serif;
+    display: block;
+    font-weight: 300;
+    font-size: 60px;
+    color: #35495e;
+    letter-spacing: 1px;
+    margin-bottom: 0.6rem;
+  }
+
+  .subtitle {
+    font-weight: 300;
+    font-size: 25.2px;
+    color: #526488;
+    word-spacing: 3px;
+    padding-bottom: 10px;
+  }
+
+  hr {
+    margin-bottom: 25px;
+  }
 }
 
 @media (max-width: 416px) {

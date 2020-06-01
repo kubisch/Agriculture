@@ -3,7 +3,7 @@
     <navbar />
     <div class="container main-content">
       <div class="row justify-content-between" style="margin-top: 4rem">
-        <div class="col-sm-7" style="margin-bottom: 2rem;">
+        <div class="col-sm-7" style="margin-bottom: 4rem;">
           <div class="card shadow-sm">
             <div class="card-body">
               <h5 class="card-title title">Contact us</h5>

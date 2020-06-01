@@ -46,7 +46,7 @@
     </button>
     <div id="navbarNavAltMarkup" class="collapse navbar-collapse">
       <div class="navbar-nav">
-        <a class="nav-item nav-link" href="#">The Issues</a>
+        <nuxt-link to="/issues" class="nav-item nav-link">The Issues</nuxt-link>
         <nuxt-link to="/contact" class="nav-item nav-link"
           >Contact Us</nuxt-link
         >

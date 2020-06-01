@@ -50,7 +50,7 @@
         <nuxt-link to="/contact" class="nav-item nav-link"
           >Contact Us</nuxt-link
         >
-        <a class="nav-item nav-link" href="#">Donate</a>
+        <nuxt-link to="/donate" class="nav-item nav-link">Donate</nuxt-link>
       </div>
     </div>
   </nav>

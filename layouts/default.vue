@@ -16,6 +16,7 @@ html {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
   min-height: 100vh;
+  overflow-y: overlay; /* Hacky and bad practice (according to SO), but I don't want to do it the hard way for contact.vue */
 }
 
 *,

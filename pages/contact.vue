@@ -3,7 +3,7 @@
     <navbar />
     <div class="container main-content">
       <div class="row justify-content-between" style="margin-top: 4rem">
-        <div class="col-sm-7" style="margin-bottom: 2rem;">
+        <div class="col-sm-7" style="margin-bottom: 4rem;">
           <div class="card shadow-sm">
             <div class="card-body">
               <h5 class="card-title title">Contact us</h5>
@@ -64,7 +64,9 @@
               <div>
                 <a href=""><i class="fab fa-steam-square fa-5x"></i></a>
                 <a href=""><i class="fab fa-facebook-square fa-5x"></i></a>
-                <a href=""><i class="fab fa-github-square fa-5x"></i></a>
+                <a href="https://github.com/Niseyami"
+                  ><i class="fab fa-github-square fa-5x"></i
+                ></a>
                 <a href=""><i class="fab fa-snapchat-square fa-5x"></i></a>
                 <a href=""><i class="fab fa-twitter-square fa-5x"></i></a>
                 <a href=""><i class="fab fa-tumblr-square fa-5x"></i></a>

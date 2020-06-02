@@ -31,7 +31,7 @@
               <!-- Github pages: src="/Agriculture/farmer-automation-survey.png" -->
               <!-- Not Github pages: src="/farmer-automation-survey.png" -->
               <img
-                src="/farmer-automation-survey.png"
+                src="/Agriculture/farmer-automation-survey.png"
                 alt="Survey results"
                 class="img-thumbnail shadow"
               />
@@ -43,7 +43,7 @@
               <!-- Github pages: src="/Agriculture/farming-robot.jpg" -->
               <!-- Not Github pages: src="/farming-robot.jpg" -->
               <img
-                src="/farming-robot.jpg"
+                src="/Agriculture/farming-robot.jpg"
                 alt="Robot automating farming work"
                 class="img-thumbnail shadow"
               />

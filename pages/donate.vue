@@ -11,7 +11,7 @@
             <!-- Github pages: src="/Agriculture/donate-image.jpg" -->
             <!-- Not Github pages: src="/donate-image.jpg" -->
             <img
-              src="/donate-image.jpg"
+              src="/Agriculture/donate-image.jpg"
               class="card-img"
               alt="Donation image"
             />

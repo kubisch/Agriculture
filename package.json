@@ -32,7 +32,7 @@
     "cross-env": "^5.2.1",
     "express": "^4.16.4",
     "node-sass": "^4.14.1",
-    "nuxt": "^2.12.2",
+    "nuxt": "^3.4.3",
     "nuxt-purgecss": "^1.0.0",
     "sass-loader": "^8.0.2"
   },
